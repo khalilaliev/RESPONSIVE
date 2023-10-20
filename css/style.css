@@ -1,0 +1,754 @@
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../fonts/ArchitectsDaughter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background: #D8D8D6;
+    font-family: Montserrat, Roboto,  'Architects Daughter';
+}
+.tittle{
+    color: #161616;
+    font-size: 32px;
+    font-family: 'Architects Daughter';
+}
+.text{
+    color: #161616;
+    font-size: 18px;
+    line-height: 30px;
+}
+.header{
+    background: #81A36B;
+    padding: 25px 0;
+}
+.header_logo{
+    transition: all .2s linear;
+}
+.header_logo:hover{
+    transform: scale(1.1);
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+.header_item{
+    color: #161616;
+    font-size: 18px;
+}
+.header_burger{
+    display: none;
+}
+.amelia_box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.amelia_info{
+    flex: 1 1 50%;
+}
+.amelia_tittle{
+    color: #161616;
+    font-size: 62px;
+    font-family: Architects Daughter;
+    padding-bottom: 41px;
+}
+.amelia_text{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.amelia_btn{
+    display: flex;
+    gap: 23px;
+}
+.btn{
+    font-size: 18px;
+    color: #161616;
+    border: 0;
+    border-radius: 6px;
+    background: #81A36B;
+    padding: 18px 34px;
+    cursor: pointer;
+    border: 1px solid #81A36B;
+}
+.btn:active{
+    background: #91d663;
+}
+.btn_link{
+    background: transparent;
+}
+.amelia_img{
+    width: 560px;
+    height: 670px;
+    object-fit: cover;
+    background: url(../img/amelia_img.jpg) no-repeat center / cover;
+}
+.about{
+    margin-top: 120px;
+}
+.about_box{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about_text{
+    padding-top: 50px;
+}
+.icon{
+    margin-top: 120px;
+    background: #81A36B;
+}
+.icon_box{
+    padding: 80px 0;
+}
+.icon_icons{
+    width: 80px;
+    height: 79px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.icon_icons:hover{
+    transform: scale(1.2);
+    fill: #D8D8D6;
+}
+.icon_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.icon_list p{
+    margin-top: 25px;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.description{
+    margin-top: 120px;
+}
+.description_img{
+    width: 539px;
+    height: 560px;
+    background: url(/img/glass.jpg) no-repeat center / cover;
+}
+.description_info{
+    flex: 1 1 50%;
+}
+.description_tittle{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.description_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.work{
+    margin-top: 120px;
+}
+.work_tittle{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.work_box{
+    display: flex;
+    gap: 30px;
+    margin: 0 -15px;
+
+}
+.work_div{
+    flex: 0 1 33.33%;
+}
+.work_div{
+    background: #81A36B;
+    padding: 15px 15px; 
+    border-radius: 6px;
+    max-width: 350px;
+}
+.work_div a{
+    display: inline-block;
+}
+.work_box div img:last-child{
+    border-radius: 6px;
+}
+.work_div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work_box p{
+    text-align: center;
+    margin-top: 23px;
+}
+.footer{
+    background: #81A36B;
+    margin-top: 120px;
+}
+.footer_container{
+    text-align: center;
+    padding: 50px 0;
+}
+.footer_link{
+    display: block;
+}
+.footer_tittle{
+    font-size: 24px;
+    color: #161616;
+    padding-top: 25px;
+}
+.footer_list{
+    padding-top: 20px;
+}
+.footer_list li a{
+    font-size: 18px;
+    color: #161616;
+}
+.footer_icon{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.footer_svg{
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+}
+.footer_svg:hover{
+    transform: scale(1.1);
+    fill: #D8D8D6;
+}
+
+/*! MEDIA QUERY */
+
+
+@media (max-width: 992px) {
+    
+    .text{
+        line-height: 28px;
+        padding-bottom: 15px;
+    }
+    .tittle{
+        font-size: 28px;
+    }
+
+    /*! HEADER */
+
+    .header{
+        padding: 20px 0;
+    }
+    .header_list{
+        gap: 20px;
+    }
+    .header_item{
+        font-size: 16px;
+    }
+
+    /*! AMELIA BOX */
+
+    .amelia_tittle{
+        font-size: 56px;
+        padding-bottom: 35px;
+    }
+    .amelia_text{
+        padding-bottom: 18px;
+        font-size: 16px;
+    }
+    .amelia_btn{
+        display: flex;
+        gap: 20px;
+    }
+    .btn{
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+    .amelia_img{
+        width: 520px;
+        height: 630px;
+    }
+
+    /*! SECTION ABOUT */
+
+    .tittle{
+        font-size: 30px;
+    }
+    .about_text{
+        padding-top: 40px;
+        font-size: 16px;
+    }
+    .about{
+        margin-top: 100px;
+    }
+
+    /*! SECTION CARD */
+
+    .icon{
+        margin-top: 100px;
+    }
+    .icon_box{
+        padding: 70px 15px;
+    }
+    .icon_icons{
+        width: 60px;
+        height: 59px;
+    }
+    .icon_list p{
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    /*! SECTION DESCRIPTION */
+
+    .description{
+        margin-top: 100px;
+    }
+    .description_img{
+        width: 499px;
+        height: 520px;
+    }
+
+    /*! SECTION WORK */
+
+    .work{
+        margin-top: 100px;
+    }
+    .work_tittle{
+        padding-bottom: 35px;
+    }
+    .work_box{
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .work_div{
+        flex: 0 1 50%;
+    }
+    
+    .work_box p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    /*! FOOTER */
+
+    .footer{
+        margin-top: 100px;
+    }
+
+    .footer_container{
+        padding: 35px 0;
+    }
+    .footer_tittle{
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    .footer_list{
+        padding-top: 18px;
+    }
+    .footer_list li a{
+        font-size: 16px;
+    }
+    .footer_text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .text{
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    /*! HEADER */
+
+    .header{
+        padding: 18px 0;
+    }
+    .header_list{
+        gap: 10px;
+    }
+    .header_item{
+        font-size: 14px;
+    }
+    .header_logo img{
+        width: 120px;
+        height: 25px;
+    }
+
+    /*! AMELIA BOX */
+
+    .amelia_tittle{
+        font-size: 48px;
+        padding-bottom: 25px;
+    }
+    .amelia_box{
+        margin-top: 80px;
+        text-align: center;
+        max-width: 540px;
+    }
+    .amelia_text{
+        padding-bottom: 16px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .amelia_btn{
+        display: flex;
+        gap: 16px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 14px 28px;
+    }
+    .amelia_btn{
+        display: flex;
+        justify-content: center;
+    }
+    .amelia_img{
+        display: none;
+    }
+
+    /*! SECTION ABOUT */
+
+    .tittle{
+        font-size: 28px;
+    }
+    .about_text{
+        padding-top: 35px;
+        font-size: 14px;
+    }
+    .about{
+        margin-top: 80px;
+    }
+
+    /*! SECTION CARD */
+
+    .icon{
+        margin-top: 80px;
+    }
+    .icon_box{
+        padding: 40px 10px;
+    }
+    .icon_icons{
+        width: 50px;
+        height: 49px;
+    }
+    .icon_list p{
+        margin-top: 18px;
+        font-size: 14px; 
+    }
+    
+    /*! SECTION DESCRIPTION */
+
+    .description_img{
+        display: none;
+    }
+    .description{
+        margin-top: 80px;
+    }
+    .description_box{
+        max-width: 540px;
+        text-align: center;
+    }
+    .description_tittle{
+        padding-bottom: 35px;
+    }
+
+    /*! FOOTER */
+
+    .footer{
+        margin-top: 80px;
+    }
+    .footer_container{
+        padding: 30px 0;
+    }
+    .footer_tittle{
+        font-size: 20px;
+        padding-top: 28px;
+    }
+    .footer_list{
+        padding-top: 16px;
+    }
+    .footer_list li a{
+        font-size: 14px;
+    }
+    .footer_text{
+        font-size: 14px;
+    }
+    .footer_svg{
+        width: 20px;
+        height: 20px;
+    }
+    .footer_img{
+        width: 120px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 600px){
+    
+
+        .text{
+            line-height: 22px;
+        }
+        .tittle{
+            font-size: 26px;
+            }
+
+        /*! HEADER */
+
+        .header_burger{
+            display: block;
+            width: 40px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+        .header_burger::before,
+        .header_burger::after,
+        .header_burger span{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 4px;
+            background: #161616;
+        }
+        .header_burger span{
+            top: 50%;
+            transform: translateY(-50%); 
+        }
+        .header_burger::after{
+            top: auto;
+            bottom: 0;
+        }
+        .header_list{
+            display: none;
+        }
+        .header_logo img{
+            width: 100px;
+            height: 20px;
+        }
+
+        /*! AMELIA BOX */
+
+        .amelia_tittle{
+            font-size: 44px;
+            padding-bottom: 20px;
+        }
+        .amelia_box{
+            margin-top: 60px;
+            text-align: center;
+        }
+        .amelia_text{
+            padding-bottom: 14px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .amelia_btn{
+            display: flex;
+            gap: 14px;
+        }
+        .btn{
+            font-size: 14px;
+            padding: 12px 25px;
+        }
+        .amelia_btn{
+            display: flex;
+            justify-content: center;
+        }
+        .amelia_img{
+            display: none;
+        }
+
+        /*! SECTION ABOUT */
+    
+        .about_text{
+            padding-top: 30px;
+            font-size: 14px;
+        }
+        .about{
+            margin-top: 60px;
+        }
+
+        /*! SECTION CARD */
+
+        .icon{
+            margin-top: 60px;
+        }
+        .icon_icons{
+            width: 40px;
+            height: 39px;
+
+        }
+        .icon_box{
+            padding: 30px 0;
+        }
+        .icon_list p{
+            margin-top: 14px;
+            font-size: 14px;
+        }
+        .icon_list{
+            display: flex;
+            gap: 20px;
+            flex-flow: wrap;
+            justify-content: center;
+        }
+        .icon_icons{
+            margin: 10px 10px;
+
+        }
+
+        /*! SECTION DESCRIPTION */
+
+        .description{
+            margin-top: 60px;
+        }
+        .description_tittle{
+            padding-bottom: 30px;
+        }
+
+        /*! SECTION WORK */
+
+        .work{
+            margin-top: 60px;
+        }
+        .work_tittle{
+            padding-bottom: 25px;
+        }
+        .work_box{
+            flex-flow: wrap;
+        }
+        .work_div{
+            flex: 0 1 100%;
+        }
+        .work_box p{
+            margin-top: 18px;
+            font-size: 14px;
+        }
+        /*! FOOTER */
+
+        .footer{
+            margin-top: 60px;
+        }
+        .footer_container{
+            padding: 30px 0;
+        }
+        .footer_tittle{
+            font-size: 18px;
+            padding-top: 25px;
+        }
+        .footer_list{
+            padding-top: 15px;
+        }
+        .footer_list li a{
+            font-size: 14px;
+        }
+        .footer_text{
+            font-size: 14px;
+        }
+        .footer_svg{
+            width: 20px;
+            height: 20px;
+        }
+        .footer_img{
+            width: 100px;
+            height: 20px;
+        }
+    }
+
+
+   
+ 
